@@ -5,14 +5,22 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"os"
 	"strings"
 )
 
 // Get all currency rates from Open Exchange Rates API
 func getallCurrency() {
 
+	var appId, ok = os.LookupEnv("OER_APP_ID")
+
+	if !ok {
+		fmt.Println("first export OER_APP_ID to use this tool")
+		return
+	}
+
 	// Get data in JSON format from Open Exchange Rates API using a Key
-	response, err := http.Get("http://openexchangerates.org/api/latest.json?app_id=YOUR_APP_ID")
+	response, err := http.Get("http://openexchangerates.org/api/latest.json?app_id=" + appId)
 	if err != nil {
 		panic(err.Error())
 		return

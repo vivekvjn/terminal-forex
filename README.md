@@ -18,5 +18,6 @@ git clone https://github.com/vivekvjn/terminal-forex
 cd terminal-forex
 
 # Access the Open Exchange Rates API using this program.
+export OER_APP_ID="YOUR_OPEN_EXCHANGE_RATE_APP_ID"
 go run terminal-forex
 ```
