@@ -1,25 +1,22 @@
-goOpenExchangeRate
-==================
+# Terminal Forex
 
-Free Foreign Currency Exchange Rates Web Service:
+Get Forex info on terminal
 
-          - Accesses the Open Exchange Rates API using a valid Key
-          - Receives the response in JSON format
-          - Parses the JSON data
-          - Display all currencies in the terminal/command prompt
+- Accesses the Open Exchange Rates API using a valid Key
+- Receives the response in JSON format
+- Parses the JSON data
+- Display all currencies in the terminal/command prompt
 
+## Prerequisite
 
-Installation        
+[Install Go](https://github.com/golang/go/wiki/Ubuntu 'Install Go on Ubuntu')
 
-        Install Go , MySQL
-        
-        Install MySQL
-        
-        git clone https://github.com/vijaysgit/goOpenExchangeRate
-        
-        cd goOpenExchangeRate
-        
-Access the Open Exchange Rates API using this program.        
-        
-        go run goOpenExchangeRate
-        
+## Installation & Usage
+
+```bash
+git clone https://github.com/vivekvjn/terminal-forex
+cd terminal-forex
+
+# Access the Open Exchange Rates API using this program.
+go run terminal-forex
+```
