@@ -1,3 +1,9 @@
 # ignore these temporary files
 *.swp
+
+# ignore these build binaries
 terminal-forex
+terminal-forex.exe
+
+# ignore following directories inside project root
+/.vscode/
