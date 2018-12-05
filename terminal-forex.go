@@ -23,13 +23,11 @@ func getallCurrency() {
 	response, err := http.Get("http://openexchangerates.org/api/latest.json?app_id=" + appId)
 	if err != nil {
 		panic(err.Error())
-		return
 	}
 	defer response.Body.Close()
 	body, err := ioutil.ReadAll(response.Body)
 	if err != nil {
 		panic(err.Error())
-		return
 	}
 
 	// Removing the leading/trailing white spaces in the data
